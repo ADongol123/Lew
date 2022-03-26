@@ -1,0 +1,35 @@
+ .Services {
+    display: flex;
+    padding: 20px;
+    margin-bottom: 0px;
+    justify-content: space-between;
+    
+  }
+.Services__card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+  }
+  .Services__detail {
+    line-height: 2;
+    margin-left: 80px;
+  }
+ @media (max-width:768px){
+     .Services__card {
+            width: 90%;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            
+     }
+     .Services{
+         display: flex;
+         flex-direction: column;
+         justify-content: space-around;
+
+        
+        
+     }
+ }

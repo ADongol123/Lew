@@ -1,56 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import React,{useState} from 'react';
 import './App.css';
-
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Middles from './Components/Second_Component/Middle';
+import Bottom from "./Components/Third_Component/Bottom" 
+import Navbar from './Components/First_Component/Homepage/Navbar';
+import Aboutpage from './Components/First_Component/AboutUs/Aboutpage';
+import Homepage from './Components/First_Component/Homepage/Homepage';
+import Contact from './Components/Second_Component/Contacts/Contact';
+import Footer from './Components/First_Component/Homepage/Footer';
+import Cards from './Components/Second_Component/Shopping/Cards';
 function App() {
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    
+      <Router> 
+      <Navbar/>
+    <Switch>
+        <Route path="/" exact component={Homepage}  />
+        <Route path="/about" component={Aboutpage}>
+          <Aboutpage/>
+          </Route>
+          <Route path="/contact" component={Contact}>
+          <Contact/>
+          </Route>
+           <Route path="/shop" component={Cards}>
+          <Cards/>
+          </Route>
+      </Switch>
+      <Footer/>
+      </Router>
+    
     </div>
   );
 }

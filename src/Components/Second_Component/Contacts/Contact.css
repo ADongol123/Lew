@@ -1,0 +1,209 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    /* align-items: center; */
+    /* height: 100%; */
+    /* margin-left: -150px; */
+}
+.contact__touch{
+    display: flex;
+    flex-direction: column;
+    flex: 0.5;
+}
+.contact__touch > h2{
+    padding: 40px;
+    color:  rgb(14, 48, 78);;
+    font-size: 40px;
+}
+.contact__touch > p{
+    color: gray;
+    margin-left: 40px;
+    font-size: 18px;
+}
+.contact__form{
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.contact__form > p{
+    color:  rgb(14, 48, 78);;
+    font: 10px;
+    font-weight: 600;
+}
+.contactform__name{
+    display: flex;
+    align-items: center;  
+    margin-top: 5px;  
+}
+.cname__first > input{
+    width: 250px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+.cname__first > p{
+    margin-top: 5px;
+    color: gray;
+}
+.cname__second > input{
+    width: 250px;
+    height: 40px;
+    border: 1px solid #ccc;
+    margin-left: 80px;
+}
+.cname__second > p{
+    margin-top: 5px;
+    color: gray;
+    margin-left: 80px;
+}
+.contactform__email{
+    margin-top: 30px;
+}
+.contactform__email > p{
+    color:  rgb(14, 48, 78);;
+    font: 10px;
+    font-weight: 600;
+}
+.contactform__email > input{
+    width: 580px;
+    height: 40px;
+    border: 1px solid #ccc;
+}
+.contactform__message{
+    margin-top: 30px;
+}
+.contactform__message > p{
+    color:  rgb(14, 48, 78);;
+    font: 10px;
+    font-weight: 600;
+}
+.contactform__message > input{
+    width: 580px;
+    height:150px;
+    border: 1px solid #ccc;
+}
+.contact__button{
+    margin-top: 20px;
+    height: 50px;
+    width: 95px;
+    background-color: #E0E0E0	;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+.contact__button:hover{
+    background-color: #D0D0D0	;
+    transition: ease-in 0.2s;
+}
+.contact__info{
+    /* flex: 0.5; */
+    margin-left: -100px;
+}
+.contact__info > h2{
+    font-size: 40px;
+    color:  rgb(14, 48, 78);;
+    margin-top:40px ;
+}
+.contact__info > p{
+    color: gray;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.contact__information{
+   margin-top: 50px;
+}
+.contactinfo__description{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contactinfo__description > p{
+    margin-left: 20px;
+    font-size: 18px;
+    color: gray;
+}
+.contact__smedia{
+    margin-top: 50px;
+}
+.contact__smedia > p{
+    color:  rgb(14, 48, 78);;
+    font-size: 25px;
+    font-weight: 600;
+}
+.contact__icons{
+    margin-top: 70px;
+}
+@media screen and (max-width:1020px) {
+    .contact{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact__touch{
+        margin-left: -20px;
+    }
+    .cname__first > input{
+        width: 220px;
+        height: 40px;
+        border: 1px solid #ccc;
+    }
+    .cname__second > input{
+        width: 220px;
+        margin-left: 50px;
+    }
+    .cname__second > p{
+        margin-left: 50px;
+    }
+    .contactform__email > input{
+        width: 500px;
+    }
+    .contactform__message{
+        margin-top: 30px;
+    }
+    .contactform__message > input{
+        width: 500px;
+        height:150px;
+        border: 1px solid #ccc;
+    }
+    
+.contact__info{
+margin-left: 20px;
+}
+.contact__info > h2{
+    font-size: 40px;
+    color:  rgb(14, 48, 78);;
+    margin-top:40px ;
+}
+.contact__info > p{
+    color: gray;
+    margin-top: 30px;
+    font-size: 18px;
+}
+.contact__information{
+   margin-top: 50px;
+}
+.contactinfo__description{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contactinfo__description > p{
+    margin-left: 20px;
+    font-size: 18px;
+    color: gray;
+}
+.contact__smedia{
+    margin-top: 50px;
+}
+.contact__smedia > p{
+    color:  rgb(14, 48, 78);;
+    font-size: 25px;
+    font-weight: 600;
+}
+.contact__icons{
+    margin-top: 70px;
+}
+  }
+  

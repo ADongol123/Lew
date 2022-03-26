@@ -1,0 +1,33 @@
+.bottom_side{
+    border-top: 1px solid lightgray;
+}
+.bottom__main{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+.first__part{
+    flex: 0.25;
+    
+}
+.first__part > h1{
+  margin-right: 360px;
+  
+}
+.first__part > p{
+    color: gray;
+}
+.second__part{
+    flex: 0.25;
+
+}
+.third__part{
+    flex: 0.25;
+
+}
+.fourth__part{
+    flex: 0.25;
+}

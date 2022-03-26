@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.AboutPage{
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ 
+}
+.AboutPage__about{
+    background-color: rgba(0,0,0,0.04);
+    display: flex;
+    padding-top:110px;
+    padding-left:110px;
+    padding-right:110px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.about__Text{
+    width: 50%;
+    line-height: 2;
+}
+.about__Text p{
+    text-align: left;
+    line-height: 2;
+    color:#7A7A7A;
+    font-size: 16px;
+    font-weight: 400;
+}
+.AboutPage__about img{
+    object-fit: cover;
+    width: 45%;
+    height: 340px;
+    top:0;
+}
+.AboutPage__vedio{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+}
+h1{
+    font-weight: 500;
+}
+.AboutPage__vision{
+    background-color: rgba(0,0,0,0.04);
+    display: flex;
+    padding:110px;
+    justify-content: space-between;
+    margin-top: 9px;
+}
+.card{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: left;
+    line-height: 3;
+}
+.card h3{
+    font-weight: 400;
+    font-size: 30px;
+}
+.card p{
+    text-align: left;
+    line-height: 2;
+    color:#7A7A7A;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media (max-width:768px) {
+    .AboutPage__about{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .AboutPage__about img{
+        object-fit: cover;
+        width: 100%;
+        height: 340px;
+        margin-top:20px;
+    }
+    h1{
+        font-weight: 500;
+        text-align: center;
+    }
+    .about__Text{
+        padding-left:20px;
+        padding-right: 20px;
+        width: 90%;
+        
+
+    }
+    .about__Text p{
+        text-align: center;
+    }
+    .AboutPage__vision{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 90%;
+        padding: 10px;
+    }
+}
